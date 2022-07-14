@@ -11,7 +11,7 @@
 body{
     background-attachment: fixed;
     background-image: url(https://images.pexels.com/photos/1341279/pexels-photo-1341279.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
-    font-family: 'Manjari', sans-serif;
+    font-family: 'Manjari', sans-serif !important;
 }
 
 header{
@@ -22,41 +22,33 @@ header{
 
 .navbar{
     background-color: rgba(30,32,53,.6);
-    display: flex;
-    justify-content: space-between;
     border-bottom: 1px solid #fff;
+    padding: 20px;
 }
 
-.navbar .ap-logo{
-    width: 150px;
-    height: 90px;
+
+
+.navbar button{
+    margin: 6px;
+    border: 1px solid #ff005d;
 }
 
-.menu{
-    list-style: none;
-    display: flex;
-}
-
-.menu li{
-   margin: 30px 5px;
-}
-
-.menu a{
-    text-decoration: none;
-    color: #ffffff;
-    font-size: 1.5em;
-    padding: 10px 15px;
+.navbar a{
+    font-size: 1.2em; 
+    margin: 0 10px;
+    color: #fff;
     font-family: 'Patrick Hand', cursive;
 }
 
-.menu a:hover{
-    color: #b49cf7;
+.navbar a:hover{
+    color: #ff005d;
+    transition: .5s;
 }
 
 .inicio{
-    margin: 200px;
+    width: 70%;
+    margin: 400px auto;
     color: #FFFFFF;
-    padding: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -79,120 +71,170 @@ header{
 
 .inicio span{
     display: block;
-    font-size: 4em;
+    font-size: 3.7em;
     font-family: monospace;
     white-space: nowrap;
     border-right: 4px solid;
     width: 23ch;
 
-    animation: typing 3s steps(23), blink .5s infinite step-end alternate;
+    animation: typing 3s steps(20), blink .5s infinite step-end alternate;
 
     overflow: hidden;
 }
 
 .inicio h3{
-    font-size: 2em;
-    
+    font-size: 1.7em;
 }
 
 .inicio p{
-    margin: 10px;
-    font-size: 1.5em;
+    font-size: 1.2em;
 }
-.inicio a{
-    font-size: 2.5em;
-    margin: 15px;
-    color:#fff;
+
+.inicio .ap-logo{
+    width: 200px;
+    height: 130px;
+    display: flex;
+    margin: 0 auto;
+    margin-top: -40px;
 }
 
 .texto-inicio{
-    margin-right: 20px;
-    padding-right: 20px;
+    align-items: center;
     text-align: center;
 }
 
 .sobre-mi{
     background-color: transparent;
-    padding: 40px;
-    color: #fff;
+    padding: 0 40px;
+    color: #fff;;
+    margin-bottom: 100px;
+    width: 100%;
 }
 
 .sobre-mi h1{
-    font-size: 3em;
+    font-size: 2.7em;
     margin-bottom: 25px;
     text-align: center;
 }
 
 .sobre-mi p{
-    font-size: 1.5em;
+    font-size: 1.2em;
     text-align: justify;
+    margin-bottom: 20px;
+}
+
+.academia, .cursos{
+    display: inline-table;
+    width: 49.8%;
+    height: 300px;
+    margin: 40px 0;
+    border: 1px dashed #fff;
+    border-radius: 20px;
+    background-color: rgba(30,32,53,.6);
+}
+
+.sobre-mi div h2{
+    margin: 20px;
+    text-align: center;
+    font-size: 1.7em;
+}
+
+.sobre-mi div h3{
+    margin: 0 30px;
+    font-size: 1.2em;
+}
+
+.sobre-mi div p{
+    font-size: 1em;
+    margin: 0 30px;
+    margin-bottom: 15px;
 }
 
 .portfolio{
-    color: #fff;
-    padding: 40px;
-}
-
-.portfolio h1{
-    font-size: 3em;
-    margin-bottom: 25px;
+    padding: 0 40px;
     text-align: center;
 }
 
-.portfolio p{
-    font-size: 1.5em;
+.portfolio h1{
+    color: #fff;
+    text-align: center;
+    font-size: 2.7em;
+    margin-bottom: 15px;
+}
+
+.portfolio .card{
+    background-color: rgba(30,32,53,.6);
+    color: #fff;
+    border: 1px dashed #fff;
+    border-radius: 15px;
+    text-align: center;
+    display: inline-block;
+    z-index: -1;
+    width: 25rem;
+}
+
+.portfolio img{
+    border-radius: 15px;
 }
 
 .habilidades{
     color: #fff;
     padding: 40px;
+    margin-bottom: 145px;
 }
 
 .habilidades h1{
     text-align: center;
-    font-size: 3em;
-    
+    font-size: 2.7em;
+    margin-bottom: 30px;
 }
 
-.habilidades img{
-    display: inline-block;
-    margin: 10px;
+.habilidades h3{
+    margin: 10px 0;
+    text-align: center;
 }
 
-.habilidades img:hover{
-    width: 220px;
-    transition: .5s;
+.habilidades .contenedor{
+    width: 50%;
+    margin: 0 auto;
+    background-color: rgba(75, 76, 92, 0.6);
+    border-radius: 5px;
 }
 
-.habilidades img:not(:hover){
-    transition: .5s;
+.habilidades .habilidad{
+    text-align: right;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #fff;
 }
 
-.html, .java, .sql, .spring, .bootstrap{
-    width: 200px;
-}
+.html {width: 40%; background-color: rgba(255, 0, 93, .8); border-radius: 5px;} 
+.css {width: 30%; background-color: rgba(255, 0, 93, .8); border-radius: 5px;} 
+.js {width: 30%; background-color: rgba(255, 0, 93, .8); border-radius: 5px;} 
+.angular {width: 0%; background-color: rgba(255, 0, 93, .8); border-radius: 5px;}
+.sql {width: 30%; background-color: rgba(255, 0, 93, .8); border-radius: 5px;} 
+.java {width: 0%; background-color: rgba(255, 0, 93, .8); border-radius: 5px;} 
+.spring {width: 0%; background-color: rgba(255, 0, 93, .8); border-radius: 5px;} 
 
-.js, .angular, .css{
-    width: 160px;
-}
 
 .contacto{
     color: #fff;
     padding: 40px;
     background-color: rgba(30,32,53,.6);
-    width: 60%;
+    width: 70%;
     margin: 0 auto;
     border-radius: 50px;
+    margin-bottom: 100px;
 }
 
 .contacto h1{
-    font-size: 3em;
+    font-size: 2.7em;
     text-align: center;
     margin-bottom: 20px;
 }
 .contacto p{
     text-align: center;
-    font-size: 1.5em;
+    font-size: 1.2em;
 }
 
 .contacto .redes{
@@ -201,19 +243,24 @@ header{
 }
 
 .contacto a{
-    margin: 15px;
+    padding: 0 15px;
     display: inline-block;
-    font-size: 2em;
+    font-size: 1.7em;
     color: #fff;
 }
 
+.contacto a:hover{
+    color: #ff005d;
+    transition: .5s;
+}
+
 form{
-    width: 50%;
+    width: 65%;
     margin: 0 auto;
 }
 
 form label{
-    font-size: 1.5em;
+    font-size: 1.2em;
     text-align: left;
 }
 
@@ -242,8 +289,64 @@ form input:focus{
     background-color: rgba(106, 115, 240, 0.6);
     cursor: pointer;
     width: 100px;
-    font-size: 1.5em;
+    font-size: 1.2em;
     text-align: center;
     letter-spacing: 1px;
     font-family: 'Manjari', sans-serif;
+}
+
+@media screen and (max-width: 470px){
+    .inicio span{
+        font-size: 1.5em;
+    }
+
+    .inicio h3{
+        font-size: 1.25em;
+    }
+
+    .inicio p{
+        font-size: 1em;
+    }
+
+    .sobre-mi div{
+        width: 100%;
+    }
+
+    .portfolio .card{
+        width: 15rem;
+    } 
+    .habilidades .contenedor{
+        width: 70%;
+    }
+
+    form{
+        width: 90%;
+    }
+}
+
+@media screen and (min-width: 471px) AND (max-width: 986px)  {
+    .inicio span{
+        font-size: 2.4em;
+    }
+    .sobre-mi div{
+        width: 100%;
+    }
+
+    .habilidades .contenedor{
+        width: 70%;
+    }
+
+    form{
+        width: 90%;
+    }
+}
+
+
+@media screen and (min-width: 987px) AND (max-width: 1172px) {
+    .inicio span{
+        font-size: 3em;
+    }
+    .sobre-mi div{
+        width: 100%;
+    }
 }

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Giuliana Erika Massanet</title>
     <link href="css/styles.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap" rel="stylesheet"> 
@@ -14,29 +15,40 @@
 </head>
 <body>
     <header>
-        <nav class="navbar">
-            <img class="ap-logo" src="imágenes/APLogo-20-20.png" alt="Argentina Programa">
-            <ul class="menu">
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#sobre-mi">Sobre Mí</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#habilidades">Habilidades</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
+        <nav class="navbar navbar-dark navbar-expand-lg">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#inicio">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#sobre-mi">Sobre Mí</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#portfolio">Portfolio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#habilidades">Habilidades</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#contacto">Contacto</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
     </header>
 
     <div class="inicio" id="inicio">
         <div class="texto-inicio">
             <span>Giuliana Erika Massanet</span>
             <h3>Full Stack Developer</h3>
-            <p>Una mujer apasionada por el mundo tecnológico.</p>
-            <a href="https://www.facebook.com/Giuli.Massanet"><ion-icon name="logo-facebook"></ion-icon></a>
-            <a href="https://www.instagram.com/giulimassanet_/"><ion-icon name="logo-instagram"></ion-icon></a>
-            <a href="https://wa.me/541162283846"><ion-icon name="logo-whatsapp"></ion-icon></a>
-            <a href="https://www.linkedin.com/in/giuliana-massanet/"><ion-icon name="logo-linkedin"></ion-icon></a>
-            <a href="https://github.com/Shushu99"><ion-icon name="logo-github"></ion-icon></a>
-            <a href="https://twitter.com/Shushu_55"><ion-icon name="logo-twitter"></ion-icon></a>
+            <p>Una persona apasionada por el mundo tecnológico.</p>
+            <img class="ap-logo" src="imágenes/APLogo-20-20.png" alt="Argentina Programa">
         </div>
     </div>
 
@@ -44,35 +56,108 @@
         <h1>Sobre Mí</h1>
         <p>Soy una persona que siempre le gusta aprender sobre lo que está detrás del mundo tecnológico. Estuve realizando varios cursos de programación, ya sea en Udemy o "Argentina Programa", o de Reparación básica de PC's. Siempre estoy mirando contenido acerca de Programación o Hardware y Software computacional. También soy estudiante de una Tecnicatura Universitaria en Programación Informática.</p>
         <p>Soy una persona responsable, puntual, curiosa, con muchas ganas de poner en práctica lo aprendido en una primera experiencia laboral, y de crecer profesionalmente en el área.</p>
+        <div class="academia">
+            <h2>Formación Académica</h2>
+            <div>
+                <h3>Tecnicatura Universitaria en Programación Informática (2022 - En curso)</h3>
+                <p>Universidad Nacional de San Martín</p>
+            </div>
+            <div>
+                <h3>Estudios Secundarios: Bachiller en Economía y Administración (2012 - 2017)</h3>
+                <p>Colegio Eymard</p>
+            </div>
+        </div>
+        <div class="cursos">
+            <h2>Formación Complementaria</h2>
+            <div>
+                <h3>Argentina Programa (2021 - En Curso)</h3>
+                <p>Ministerio de Desarrollo Productivo</p>
+            </div>
+            <div>
+                <h3>Universidad Desarrollo Web - FrontEnd Web Developer (2022)</h3>
+                <p>Udemy</p>
+            </div>
+            <div>
+                <h3>Reparación de PC - Notebook (2019 - 2020)</h3>
+                <p>Instituto de Computación y Lenguas Extranjeras (ICOLE)</p>
+            </div>
+        </div>
     </div>
 
     <div class="portfolio" id="portfolio">
         <h1>Mi Portfolio</h1>
-        <p>Acá voy a poner mis desarrollos</p>
+        <div class="card" ">
+            <img src="imágenes/image-not-found.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="imágenes/image-not-found.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="imágenes/image-not-found.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
     </div>
 
     <div class="habilidades" id="habilidades">
         <h1>Habilidades</h1>
-        <img class="html" src="imágenes/HTML5.png" alt="HTML5">
-        <img class="css" src="imágenes/CSS.png" alt="CSS3">
-        <img class="bootstrap" src="imágenes/Bootstrap.png" alt="Bootstrap">
-        <img class="js" src="imágenes/JavaScript.png" alt="JavaScript">
-        <img class="angular" src="imágenes/Angular.png" alt="Angular">
-        <img class="sql" src="imágenes/MySQL-logo.png" alt="MySQL">
-        <img class="java" src="imágenes/java-logo-1.png" alt="Java">
-        <img class="spring" src="imágenes/1200px-Spring_Framework_Logo_2018.svg.png" alt="Spring Boot">
+
+        <h3>HTML</h3>
+        <div class="contenedor">
+            <div class=" habilidad html"></div>
+        </div>
+
+        <h3>CSS</h3>
+        <div class="contenedor">
+            <div class=" habilidad css"></div>
+        </div>
+
+        <h3>JavaScript</h3>
+        <div class="contenedor">
+            <div class="habilidad js"></div>
+        </div>
+
+        <h3>Angular</h3>
+        <div class="contenedor">
+            <div class="habilidad angular"></div>
+        </div>
+
+        <h3>MySQL</h3>
+        <div class="contenedor">
+            <div class="habilidad sql"></div>
+        </div>
+
+        <h3>Java</h3>
+        <div class="contenedor">
+            <div class="habilidad java"></div>
+        </div>
+
+        <h3>Spring Boot</h3>
+        <div class="contenedor">
+            <div class="habilidad spring"></div>
+        </div>
     </div>
 
     <div class="contacto" id="contacto">
         <h1>Contacto</h1>
         <p>Puedes escribirme por el formulario de contacto, o contactarme por mis redes sociales:</p>
         <div class="redes">
-            <a href="https://www.facebook.com/Giuli.Massanet"><ion-icon name="logo-facebook"></ion-icon></a>
-            <a href="https://www.instagram.com/giulimassanet_/"><ion-icon name="logo-instagram"></ion-icon></a>
             <a href="https://wa.me/541162283846"><ion-icon name="logo-whatsapp"></ion-icon></a>
             <a href="https://www.linkedin.com/in/giuliana-massanet/"><ion-icon name="logo-linkedin"></ion-icon></a>
             <a href="https://github.com/Shushu99"><ion-icon name="logo-github"></ion-icon></a>
-            <a href="https://twitter.com/Shushu_55"><ion-icon name="logo-twitter"></ion-icon></a>
         </div>
         <form id="contacto" name="contacto">
             <div class="nombre-form">
@@ -82,6 +167,10 @@
             <div class="email-form">
                 <label for="email">Email</label>
                 <input type="text" id="email" name="email" required="true">      
+            </div>
+            <div class="asunto-form">
+                <label for="mensaje">Asunto</label>
+                <input type="text" id="asunto" name="asunto" required="true">
             </div>
             <div class="mensaje-form">
                 <label for="mensaje">Mensaje</label>
@@ -95,5 +184,6 @@
 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 
 </body>
