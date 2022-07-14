@@ -45,6 +45,14 @@ header{
     transition: .5s;
 }
 
+.navbar .login{
+    color: #00fff2;
+}
+
+.navbar .login:hover{
+    color: #00ff73;
+}
+
 .inicio{
     width: 70%;
     margin: 400px auto;
